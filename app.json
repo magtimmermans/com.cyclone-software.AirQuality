@@ -1,0 +1,91 @@
+{
+  "id": "com.cyclone-software.AirQuality",
+  "version": "1.0.0",
+  "compatibility": ">=2.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "AirQuality",
+    "nl": "Luchtkwaliteit"
+  },
+  "description": {
+    "en": "Air Quality for Dutch Provinces",
+    "nl": "Luchtkwaliteit voor Nederlandse gemeentes"
+  },
+  "permissions": ["homey:manager:geolocation"],
+  "category": [
+    "climate"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "brandColor": "#E8461D",
+  "contributing": {
+      "donate": {
+          "paypal": {
+              "username": "marceltimmermans"
+          }
+      }
+  },
+  "author": {
+    "name": "Marcel Timmermans",
+    "email": "marcel@timmermans.us"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "lki3",
+        "title": {
+          "en": "LKI good",
+          "nl": "Luchtkwaliteit index goed"
+        }
+      },
+      {
+        "id": "lki6",
+        "title": {
+          "en": "LKI reasonable",
+          "nl": "Luchtkwaliteit index matig"
+        }
+      },
+      {
+        "id": "lki8",
+        "title": {
+          "en": "LKI inadequate",
+          "nl": "Luchtkwaliteit index onvoldoende"
+        }
+      },
+      {
+        "id": "lki10",
+        "title": {
+          "en": "LKI bad",
+          "nl": "Luchtkwaliteit index slecht"
+        }
+      },
+      {
+        "id": "lki12",
+        "title": {
+          "en": "LKI very bad",
+          "nl": "Luchtkwaliteit index erg slecht"
+        }
+      },
+      {
+        "id": "lkitrigger",
+        "title": {
+          "en": "LKI change",
+          "nl": "Luchtkwaliteit Index verandering"
+        },
+        "tokens": [
+          {
+            "name": "lki",
+            "type": "number",
+            "title": {
+              "en": "LKI",
+              "nl": "Luchtkwaliteit index"
+            },
+            "example": 3
+          }
+        ]
+      }
+    ]
+  }
+}
